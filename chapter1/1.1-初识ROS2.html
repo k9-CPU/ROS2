@@ -1,0 +1,949 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.1 初识ROS2 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.1-初识ROS2.html" />
+    
+    
+    <link rel="prev" href="intro.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">第一章 ROS2概述与环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    入门篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="1.1-初识ROS2.html">
+            
+                <a href="1.1-初识ROS2.html">
+            
+                    
+                    1.1 初识ROS2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1.1-初识ROS2.html">
+            
+                <a href="1.1-初识ROS2.html#111-ros的发展历程">
+            
+                    
+                    1.1.1 ROS的发展历程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1.1-初识ROS2.html">
+            
+                <a href="1.1-初识ROS2.html#112ros2的组成体系">
+            
+                    
+                    1.1.2 ROS2的组成体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="1.1-初识ROS2.html">
+            
+                <a href="1.1-初识ROS2.html#113-ros2相比ros1的优势">
+            
+                    
+                    1.1.3 ROS2相比ROS1的优势
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2-安装ROS2.html">
+            
+                <a href="1.2-安装ROS2.html">
+            
+                    
+                    1.2 动手安装ROS2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1.2-安装ROS2.html">
+            
+                <a href="1.2-安装ROS2.html#121ubuntu系统安装">
+            
+                    
+                    1.2.1 Ubuntu系统安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1.2-安装ROS2.html">
+            
+                <a href="1.2-安装ROS2.html#122-一键安装-ros2">
+            
+                    
+                    1.2.2 一键安装-ROS2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1.2-安装ROS2.html">
+            
+                <a href="1.2-安装ROS2.html#123ros2初体验">
+            
+                    
+                    1.2.3 ROS2初体验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="1.2-安装ROS2.html">
+            
+                <a href="1.2-安装ROS2.html#游戏一你说我听">
+            
+                    
+                    游戏一你说我听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="1.2-安装ROS2.html">
+            
+                <a href="1.2-安装ROS2.html#游戏二涂鸦乌龟">
+            
+                    
+                    游戏二涂鸦乌龟
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3-总结.html">
+            
+                <a href="1.3-总结.html">
+            
+                    
+                    1.3 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="advanced.html">
+            
+                <a href="advanced.html">
+            
+                    
+                    进阶篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.4-ROS2通信基础.html">
+            
+                <a href="1.4-ROS2通信基础.html">
+            
+                    
+                    1.4 ROS2通信基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="1.4-ROS2通信基础.html">
+            
+                <a href="1.4-ROS2通信基础.html#141ros2架构图表">
+            
+                    
+                    1.4.1 ROS2架构图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="1.4-ROS2通信基础.html">
+            
+                <a href="1.4-ROS2通信基础.html#142一次通信的完整流程">
+            
+                    
+                    1.4.2 一次通信的完整流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="1.5-DDS中间件.html">
+            
+                <a href="1.5-DDS中间件.html">
+            
+                    
+                    1.5 中间件DDS——ROS2的"传菜系统"
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="1.5-DDS中间件.html">
+            
+                <a href="1.5-DDS中间件.html#151什么是dds">
+            
+                    
+                    1.5.1 什么是DDS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="1.5-DDS中间件.html">
+            
+                <a href="1.5-DDS中间件.html#152dds的通讯模型">
+            
+                    
+                    1.5.2 DDS的通讯模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="1.5-DDS中间件.html">
+            
+                <a href="1.5-DDS中间件.html#153dds的核心概念">
+            
+                    
+                    1.5.3 DDS的核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="1.5-DDS中间件.html">
+            
+                <a href="1.5-DDS中间件.html#154qos--精细化服务质量控制">
+            
+                    
+                    1.5.4 QoS--精细化服务质量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="1.5-DDS中间件.html">
+            
+                <a href="1.5-DDS中间件.html#155为什么ros2要选dds">
+            
+                    
+                    1.5.5 为什么ROS2要选DDS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="1.6-进阶总结.html">
+            
+                <a href="1.6-进阶总结.html">
+            
+                    
+                    1.6 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二章 ROS2节点（Node）</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter2/intro.html">
+            
+                <a href="../chapter2/intro.html">
+            
+                    
+                    入门篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter2/2.1-节点是什么.html">
+            
+                <a href="../chapter2/2.1-节点是什么.html">
+            
+                    
+                    2.1 节点是什么？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../chapter2/2.1-节点是什么.html">
+            
+                <a href="../chapter2/2.1-节点是什么.html#211-节点的定义">
+            
+                    
+                    2.1.1 节点的定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../chapter2/2.1-节点是什么.html">
+            
+                <a href="../chapter2/2.1-节点是什么.html#212-节点之间如何交互">
+            
+                    
+                    2.1.2 节点之间如何交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../chapter2/2.1-节点是什么.html">
+            
+                <a href="../chapter2/2.1-节点是什么.html#213-节点的基本行为">
+            
+                    
+                    2.1.3 节点的基本行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter2/2.2-功能包与工作空间.html">
+            
+                <a href="../chapter2/2.2-功能包与工作空间.html">
+            
+                    
+                    2.2 功能包与工作空间
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../chapter2/2.2-功能包与工作空间.html">
+            
+                <a href="../chapter2/2.2-功能包与工作空间.html#221-功能包是什么">
+            
+                    
+                    2.2.1 功能包是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../chapter2/2.2-功能包与工作空间.html">
+            
+                <a href="../chapter2/2.2-功能包与工作空间.html#222-工作空间是什么">
+            
+                    
+                    2.2.2 工作空间是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../chapter2/2.2-功能包与工作空间.html">
+            
+                <a href="../chapter2/2.2-功能包与工作空间.html#223-常用命令">
+            
+                    
+                    2.2.3 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter2/2.3-创建第一个节点.html">
+            
+                <a href="../chapter2/2.3-创建第一个节点.html">
+            
+                    
+                    2.3 创建第一个节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../chapter2/2.3-创建第一个节点.html">
+            
+                <a href="../chapter2/2.3-创建第一个节点.html#231-操作流程">
+            
+                    
+                    2.3.1 操作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../chapter2/2.3-创建第一个节点.html">
+            
+                <a href="../chapter2/2.3-创建第一个节点.html#232-节点常用cli">
+            
+                    
+                    2.3.2 节点常用CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapter2/advanced.html">
+            
+                <a href="../chapter2/advanced.html">
+            
+                    
+                    进阶篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter2/2.4-节点参数.html">
+            
+                <a href="../chapter2/2.4-节点参数.html">
+            
+                    
+                    2.4 节点的参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../chapter2/2.4-节点参数.html">
+            
+                <a href="../chapter2/2.4-节点参数.html#241-参数是什么">
+            
+                    
+                    2.4.1 参数是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="../chapter2/2.4-节点参数.html">
+            
+                <a href="../chapter2/2.4-节点参数.html#242-声明和获取参数">
+            
+                    
+                    2.4.2 声明和获取参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.3" data-path="../chapter2/2.4-节点参数.html">
+            
+                <a href="../chapter2/2.4-节点参数.html#243-操作参数的命令">
+            
+                    
+                    2.4.3 操作参数的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter2/2.5-生命周期节点.html">
+            
+                <a href="../chapter2/2.5-生命周期节点.html">
+            
+                    
+                    2.5 生命周期节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="../chapter2/2.5-生命周期节点.html">
+            
+                <a href="../chapter2/2.5-生命周期节点.html#251-什么是生命周期节点">
+            
+                    
+                    2.5.1 什么是生命周期节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2" data-path="../chapter2/2.5-生命周期节点.html">
+            
+                <a href="../chapter2/2.5-生命周期节点.html#252-什么时候用生命周期节点">
+            
+                    
+                    2.5.2 什么时候用生命周期节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter2/2.6-多线程与执行器.html">
+            
+                <a href="../chapter2/2.6-多线程与执行器.html">
+            
+                    
+                    2.6 节点的多线程与执行器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="../chapter2/2.6-多线程与执行器.html">
+            
+                <a href="../chapter2/2.6-多线程与执行器.html#261-什么是执行器executor">
+            
+                    
+                    2.6.1 什么是执行器(Executor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.2" data-path="../chapter2/2.6-多线程与执行器.html">
+            
+                <a href="../chapter2/2.6-多线程与执行器.html#262-多线程执行器">
+            
+                    
+                    2.6.2 多线程执行器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter2/2.7-性能与调试.html">
+            
+                <a href="../chapter2/2.7-性能与调试.html">
+            
+                    
+                    2.7 节点性能与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.4.1" data-path="../chapter2/2.7-性能与调试.html">
+            
+                <a href="../chapter2/2.7-性能与调试.html#271-常用调试命令">
+            
+                    
+                    2.7.1 常用调试命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter2/2.8-总结.html">
+            
+                <a href="../chapter2/2.8-总结.html">
+            
+                    
+                    2.8 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.1 初识ROS2</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="11ros2&#x7B80;&#x4ECB;">1.1ROS2&#x7B80;&#x4ECB;</h1>
+<p>&#x5728;&#x6B63;&#x5F0F;&#x8FDB;&#x5165;<strong>ROS2</strong>&#x7684;&#x5B89;&#x88C5;&#x4E0E;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x7406;&#x89E3;&#xFF1A;ROS2&#x4ECE;&#x4F55;&#x800C;&#x6765;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x7531;&#x54EA;&#x4E9B;<strong>&#x6838;&#x5FC3;&#x90E8;&#x4EF6;</strong>&#x6784;&#x6210;&#x3002;</p>
+<h2 id="111-ros&#x7684;&#x53D1;&#x5C55;&#x5386;&#x7A0B;">1.1.1 ROS&#x7684;&#x53D1;&#x5C55;&#x5386;&#x7A0B;</h2>
+<p><strong>1&#x3001;&#x4EC0;&#x4E48;&#x662F;ROS&#xFF1F;</strong></p>
+<p><strong>ROS&#xFF08;Robot Operating System&#xFF09;</strong>&#x662F;&#x4E00;&#x5957;&#x53EF;&#x90E8;&#x7F72;&#x4E8E;Linux&#x3001;Windows&#x3001;macOS&#x7B49;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E4B;&#x4E0A;&#x7684;&#x8F6F;&#x4EF6;&#x5E93;&#x4E0E;&#x5DE5;&#x5177;&#x96C6;&#xFF0C;&#x65E8;&#x5728;&#x4E3A;&#x673A;&#x5668;&#x4EBA;&#x7CFB;&#x7EDF;&#x7684;&#x5F00;&#x53D1;&#x63D0;&#x4F9B;&#x6A21;&#x5757;&#x5316;&#x3001;&#x53EF;&#x590D;&#x7528;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x3002;</p>
+<p><strong>2&#x3001;ROS&#x7684;&#x53D1;&#x5C55;&#x5386;&#x7A0B;</strong></p>
+<p><strong>ROS1</strong> &#x65F6;&#x4EE3;&#xFF08;2007-2020&#xFF09;&#xFF1A;&#x7531;&#x65AF;&#x5766;&#x798F;&#x5927;&#x5B66;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x5B9E;&#x9A8C;&#x5BA4;&#xFF08;SAIL&#xFF09;&#x53D1;&#x8D77;&#xFF0C;&#x540E;&#x7531; Open Robotics &#x7EF4;&#x62A4;&#xFF0C;&#x51ED;&#x501F;&#x6A21;&#x5757;&#x5316;&#x3001;&#x5F00;&#x6E90;&#x5316;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x6210;&#x4E3A;&#x5168;&#x7403;&#x673A;&#x5668;&#x4EBA;&#x7814;&#x7A76;&#x7684;&#x4E8B;&#x5B9E;&#x6807;&#x51C6;&#xFF0C;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x65E0;&#x4EBA;&#x673A;&#x3001;&#x673A;&#x68B0;&#x81C2;&#x7B49;&#x9886;&#x57DF;&#x3002;&#x4F46;&#x6838;&#x5FC3;&#x5C40;&#x9650;&#x660E;&#x663E;&#xFF1A;&#x4E0D;&#x652F;&#x6301;&#x5B9E;&#x65F6;&#x6027;&#x3001;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x591A;&#x673A;&#x5668;&#x4EBA;&#x9AD8;&#x6548;&#x534F;&#x540C;&#x3001;&#x901A;&#x4FE1;&#x673A;&#x5236;&#x65E0;&#x5B89;&#x5168;&#x52A0;&#x5BC6;&#x3001;&#x4EC5;&#x9002;&#x914D; Linux &#x7CFB;&#x7EDF;&#x3002;</p>
+<p><strong>ROS2</strong> &#x65F6;&#x4EE3;&#xFF08;2017 - &#x81F3;&#x4ECA;&#xFF09;&#xFF1A;&#x57FA;&#x4E8E;DDS &#x6570;&#x636E;&#x5206;&#x53D1;&#x670D;&#x52A1;&#x5B8C;&#x5168;&#x91CD;&#x6784;&#xFF0C;2022 &#x5E74;&#x53D1;&#x5E03;&#x7684;Humble Hawksbill&#x662F; LTS &#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x672C;&#xFF08;&#x652F;&#x6301;&#x81F3; 2027 &#x5E74;&#xFF09;&#xFF0C;&#x4E5F;&#x662F;&#x5DE5;&#x4E1A;&#x754C;&#x3001;&#x5B66;&#x672F;&#x754C;&#x6700;&#x63A8;&#x8350;&#x7684;&#x7A33;&#x5B9A;&#x7248;&#x672C;&#x3002;ROS2 &#x4ECE;&#x5B9E;&#x9A8C;&#x5BA4;&#x7814;&#x7A76;&#x5DE5;&#x5177;&#xFF0C;&#x5347;&#x7EA7;&#x4E3A;&#x5DE5;&#x4E1A;&#x7EA7;&#x673A;&#x5668;&#x4EBA;&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#x3002; 
+<img src="1.1-%E5%88%9D%E8%AF%86ROS2.assets/image-20260426151259160.png" alt="image-20260426151259160" style="zoom: 50%;"></p>
+<h2 id="112ros2&#x7684;&#x7EC4;&#x6210;&#x4F53;&#x7CFB;">1.1.2ROS2&#x7684;&#x7EC4;&#x6210;&#x4F53;&#x7CFB;</h2>
+<p>  <strong>ROS 2</strong> &#x91C7;&#x7528;<strong>&#x6A21;&#x5757;&#x5316;</strong>&#x3001;<strong>&#x677E;&#x8026;&#x5408;</strong>&#x7684;<strong>&#x5206;&#x5E03;&#x5F0F;&#x67B6;&#x6784;</strong>&#x8BBE;&#x8BA1;&#xFF0C;&#x5176;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#x6784;&#x6210;&#x4E86;&#x4E00;&#x5957;&#x5B8C;&#x6574;&#x7684;&#x673A;&#x5668;&#x4EBA;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x4E0E;&#x8FD0;&#x884C;&#x6846;&#x67B6;&#x3002;&#x5404;&#x7EC4;&#x4EF6;&#x9075;&#x5FAA;&#x6807;&#x51C6;&#x5316;&#x7684;&#x901A;&#x4FE1;&#x4E0E;&#x4EA4;&#x4E92;&#x89C4;&#x8303;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x529F;&#x80FD;&#x5355;&#x5143;&#x7684;&#x89E3;&#x8026;&#x3001;&#x7075;&#x6D3B;&#x90E8;&#x7F72;&#x4E0E;&#x9AD8;&#x6548;&#x534F;&#x540C;&#xFF0C;&#x4E3A;&#x590D;&#x6742;&#x673A;&#x5668;&#x4EBA;&#x7CFB;&#x7EDF;&#x7684;&#x6784;&#x5EFA;&#x63D0;&#x4F9B;&#x4E86;&#x57FA;&#x7840;&#x652F;&#x6491;&#x3002;</p>
+<ol>
+<li><strong>&#x8282;&#x70B9;&#xFF08;Node&#xFF09;</strong>&#xFF1A;&#x6700;&#x5C0F;&#x6267;&#x884C;&#x5355;&#x5143;&#xFF0C;&#x5C01;&#x88C5;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x8BA1;&#x7B97;&#x6216;&#x63A7;&#x5236;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x6FC0;&#x5149;&#x96F7;&#x8FBE;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x3001;&#x7535;&#x673A;&#x95ED;&#x73AF;&#x63A7;&#x5236;&#x3001;&#x5168;&#x5C40;&#x8DEF;&#x5F84;&#x89C4;&#x5212;&#x7B49;&#x3002;</li>
+<li><strong>&#x8BDD;&#x9898;&#xFF08;Topic&#xFF09;</strong>&#xFF1A;&#x5F02;&#x6B65;&#x6570;&#x636E;&#x6D41;&#x901A;&#x9053;&#xFF0C;&#x8BDD;&#x9898;&#x57FA;&#x4E8E;<strong>&#x53D1;&#x5E03;-&#x8BA2;&#x9605;&#xFF08;Pub/Sub&#xFF09;&#x6A21;&#x578B;</strong>&#x5B9E;&#x73B0;&#x8282;&#x70B9;&#x95F4;&#x7684;<strong>&#x5F02;&#x6B65;&#x3001;&#x5355;&#x5411;&#x3001;&#x591A;&#x5BF9;&#x591A;</strong>&#x901A;&#x4FE1;&#x3002;</li>
+<li><strong>&#x670D;&#x52A1;&#xFF08;Service&#xFF09;</strong>&#xFF1A;&#x540C;&#x6B65;&#x8BF7;&#x6C42;-&#x54CD;&#x5E94;&#x673A;&#x5236;&#xFF0C;&#x670D;&#x52A1;&#x57FA;&#x4E8E;<strong>&#x8BF7;&#x6C42;-&#x54CD;&#x5E94;&#xFF08;Request/Response&#xFF09;&#x6A21;&#x578B;</strong>&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x7684;&#x540C;&#x6B65;&#x8C03;&#x7528;&#x3002;</li>
+<li><strong>&#x52A8;&#x4F5C;&#xFF08;Action&#xFF09;</strong>&#xFF1A;&#x957F;&#x65F6;&#x4EFB;&#x52A1;&#x7684;&#x589E;&#x5F3A;&#x4EA4;&#x4E92;&#xFF0C;&#x652F;&#x6301;&#x957F;&#x65F6;&#x95F4;&#x4EFB;&#x52A1;&#x7684;&#x53CD;&#x9988;&#x4E0E;&#x53D6;&#x6D88;&#xFF0C;&#x5178;&#x578B;&#x573A;&#x666F;&#x5305;&#x62EC;&#x5BFC;&#x822A;&#x3001;&#x6293;&#x53D6;&#x7B49;&#x3002;</li>
+<li><strong>&#x53C2;&#x6570;&#xFF08;Parameter&#xFF09;</strong>&#xFF1A;&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x673A;&#x5236;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x6216;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8BFB;&#x53D6;&#x3001;&#x4FEE;&#x6539;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x65E0;&#x9700;&#x91CD;&#x542F;&#x8282;&#x70B9;&#x5373;&#x53EF;&#x8C03;&#x6574;&#x7B97;&#x6CD5;&#x9608;&#x503C;&#x3001;&#x63A7;&#x5236;&#x589E;&#x76CA;&#x7B49;&#x914D;&#x7F6E;</li>
+<li><strong>&#x542F;&#x52A8;&#x6587;&#x4EF6;&#xFF08;Launch&#xFF09;</strong>&#xFF1A;&#x7CFB;&#x7EDF;&#x7EA7;&#x7F16;&#x6392;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x542F;&#x52A8;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x811A;&#x672C;&#xFF0C;&#x63D0;&#x5347;&#x5F00;&#x53D1;&#x4E0E;&#x90E8;&#x7F72;&#x6548;&#x7387;&#x3002;</li>
+<li><strong>&#x4E2D;&#x95F4;&#x4EF6;DDS</strong>&#xFF1A; ROS 2 &#x7684;&#x5E95;&#x5C42;&#x901A;&#x4FE1;&#x5F15;&#x64CE;&#xFF0C;&#x627F;&#x62C5;<strong>&#x8282;&#x70B9;&#x53D1;&#x73B0;&#xFF08;Discovery&#xFF09;</strong>&#x3001;<strong>&#x6D88;&#x606F;&#x8DEF;&#x7531;&#xFF08;Routing&#xFF09;</strong>&#x4E0E;<strong>&#x670D;&#x52A1;&#x8D28;&#x91CF;&#x63A7;&#x5236;&#xFF08;QoS&#xFF09;</strong>&#x4E09;&#x5927;&#x6838;&#x5FC3;&#x804C;&#x80FD;&#x3002;</li>
+<li>&#x4E0A;&#x8FF0;&#x4E03;&#x9879;&#x7EC4;&#x4EF6;&#x5E76;&#x975E;&#x5B64;&#x7ACB;&#x5B58;&#x5728;&#xFF0C;&#x800C;&#x662F;&#x5F62;&#x6210;&#x6E05;&#x6670;&#x7684;&#x5C42;&#x6B21;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7B2C;&#x4E8C;&#x7AE0;&#x505A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</li>
+</ol>
+<h2 id="113-ros2&#x76F8;&#x6BD4;ros1&#x7684;&#x4F18;&#x52BF;">1.1.3 ROS2&#x76F8;&#x6BD4;ROS1&#x7684;&#x4F18;&#x52BF;</h2>
+<p><strong>1&#x3001;&#x901A;&#x4FE1;&#x4E2D;&#x95F4;&#x4EF6;</strong></p>
+<p><strong>ROS1</strong>&#xFF1A;&#x81EA;&#x5DF1;&#x641E;&#x4E86;&#x4E00;&#x5957;<strong><em>TCPROS/UDPROS&#x901A;&#x4FE1;&#x534F;&#x8BAE;</em></strong>&#xFF0C;&#x5C31;&#x50CF;&#x62FF;&#x7740;&#x5BF9;&#x8BB2;&#x673A;&#x558A;&#x8BDD;&#x2014;&#x2014;&#x4FE1;&#x53F7;&#x4E0D;&#x597D;&#x5C31;&#x65AD;&#xFF0C;&#x8DDD;&#x79BB;&#x8FDC;&#x4E86;&#x5C31;&#x5E9F;&#x3002;</p>
+<p><strong>ROS2</strong>&#xFF1A;&#x76F4;&#x63A5;&#x7528;<strong><em>DDS&#xFF08;&#x6570;&#x636E;&#x5206;&#x53D1;&#x670D;&#x52A1;&#xFF09;</em></strong>&#xFF0C;&#x8FD9;&#x662F;&#x5DE5;&#x4E1A;&#x7EA7;&#x3001;&#x822A;&#x7A7A;&#x822A;&#x5929;&#x90FD;&#x5728;&#x7528;&#x7684;&#x901A;&#x4FE1;&#x6807;&#x51C6;&#x3002;&#x5C31;&#x50CF;&#x4F60;&#x4ECE;&#x5BF9;&#x8BB2;&#x673A;&#x6362;&#x6210;&#x4E86;5G&#x624B;&#x673A;&#xFF0C;&#x5168;&#x7403;&#x901A;&#x8BDD;&#x3001;&#x89C6;&#x9891;&#x4F1A;&#x8BAE;&#x3001;&#x7FA4;&#x804A;&#x968F;&#x4FBF;&#x641E;&#x3002;</p>
+<p>2&#x3001;<strong>&#x5B9E;&#x65F6;&#x6027;</strong> </p>
+<p><strong>ROS1</strong>&#xFF1A;&#x6CA1;&#x6709;&#x5B9E;&#x65F6;&#x6027;&#x3002;&#x4F60;&#x8BA9;&#x5B83;&#x201C;&#x5239;&#x8F66;&#x201D;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;0.5&#x79D2;&#x540E;&#x624D;&#x53CD;&#x5E94;&#x8FC7;&#x6765;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x673A;&#x5668;&#x4EBA;&#x5DF2;&#x7ECF;&#x649E;&#x5899;&#x4E86;&#x3002;</p>
+<p><strong>ROS2</strong>&#xFF1A;&#x652F;&#x6301;<strong>&#x5B9E;&#x65F6;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF08;RTOS&#xFF09;</strong>&#x3002;&#x4F60;&#x8BF4;&#x201C;&#x5239;&#x8F66;&#x201D;&#xFF0C;&#x5B83;&#x7ACB;&#x523B;&#x5239;&#x8F66;&#xFF0C;&#x8BEF;&#x5DEE;&#x4E0D;&#x5230;1&#x6BEB;&#x79D2;&#x3002;</p>
+<p>3&#x3001;<strong>&#x591A;&#x673A;&#x5668;&#x4EBA;</strong></p>
+<p><strong>ROS1</strong>&#xFF1A;&#x591A;&#x673A;&#x5668;&#x4EBA;&#xFF1F;&#x51D1;&#x5408;&#x80FD;&#x8FDE;&#xFF0C;&#x4F46;&#x7ECF;&#x5E38;&#x6389;&#x7EBF;&#x3001;&#x51B2;&#x7A81;&#x3001;&#x4E92;&#x76F8;&#x62A2;&#x8D44;&#x6E90;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7F51;&#x7EDC;&#x4E0D;&#x7A33;&#x5B9A;&#xFF0C;&#x606D;&#x559C;&#x4F60;&#x5C06;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x201C;&#x88C5;&#x7761;&#x7684;&#x4EBA;&#x201D;&#xFF0C;&#x600E;&#x4E48;&#x6233;&#x90FD;&#x53EB;&#x4E0D;&#x9192;&#x3002;</p>
+<p><strong>ROS2</strong>&#xFF1A;&#x539F;&#x751F;&#x652F;&#x6301;&#x591A;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x3001;&#x81EA;&#x52A8;&#x7EC4;&#x7F51;&#x3002;&#x4E00;&#x767E;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x540C;&#x65F6;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E95;&#x7136;&#x6709;&#x5E8F;&#xFF0C;&#x5404;&#x5E72;&#x5404;&#x7684;&#xFF0C;&#x4E92;&#x4E0D;&#x5E72;&#x6270;&#x3002;</p>
+<p>4&#x3001;<strong>&#x8DE8;&#x5E73;&#x53F0;</strong> </p>
+<p><strong>ROS1</strong>&#xFF1A;&#x4E3B;&#x8981;&#x652F;&#x6301;Linux&#xFF08;Ubuntu&#xFF09;&#x3002;&#x5176;&#x4ED6;&#x5E73;&#x53F0;&#x6839;&#x672C;&#x6CA1;&#x620F;&#x3002;</p>
+<p><strong>ROS2</strong>&#xFF1A;&#x5B98;&#x65B9;&#x652F;&#x6301; Linux / Windows / Mac / RTOS&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5728;&#x6811;&#x8393;&#x6D3E;&#x3001;Android&#x4E0A;&#x8DD1;&#x3002;</p>
+<p>5&#x3001; <strong>&#x65E0;&#x4E2D;&#x5FC3;&#x8282;&#x70B9;&#xFF08;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#xFF09;</strong></p>
+<p><strong>ROS1</strong>&#xFF1A;&#x6709;&#x4E2A;&#x53EB; <strong>Master</strong> &#x7684;&#x4E2D;&#x5FC3;&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x6709;&#x8282;&#x70B9;&#x90FD;&#x8981;&#x627E;&#x5B83;&#x6CE8;&#x518C;&#x3002;<strong>Master</strong>&#x4E00;&#x6302;&#xFF0C;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x762B;&#x75EA;&#x3002;</p>
+<p><strong>ROS2</strong>&#xFF1A;&#x6CA1;&#x6709;Master&#xFF0C;&#x8282;&#x70B9;&#x4E4B;&#x95F4;<strong>&#x76F4;&#x63A5;&#x53D1;&#x73B0;</strong>&#x3001;<strong>&#x76F4;&#x63A5;&#x901A;&#x4FE1;</strong>&#x3002;&#x6302;&#x4E86;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x4ED6;&#x7167;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="intro.html" class="navigation navigation-prev " aria-label="Previous page: 入门篇">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.1-初识ROS2.html#111-ros的发展历程" class="navigation navigation-next " aria-label="Next page: 1.1.1 ROS的发展历程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.1 初识ROS2","level":"1.2.1","depth":2,"next":{"title":"1.1.1 ROS的发展历程","level":"1.2.1.1","depth":3,"anchor":"#111-ros的发展历程","path":"chapter1/1.1-初识ROS2.md","ref":"chapter1/1.1-初识ROS2.md#111-ros的发展历程","articles":[]},"previous":{"title":"入门篇","level":"1.2","depth":1,"path":"chapter1/intro.md","ref":"chapter1/intro.md","articles":[{"title":"1.1 初识ROS2","level":"1.2.1","depth":2,"path":"chapter1/1.1-初识ROS2.md","ref":"chapter1/1.1-初识ROS2.md","articles":[{"title":"1.1.1 ROS的发展历程","level":"1.2.1.1","depth":3,"anchor":"#111-ros的发展历程","path":"chapter1/1.1-初识ROS2.md","ref":"chapter1/1.1-初识ROS2.md#111-ros的发展历程","articles":[]},{"title":"1.1.2 ROS2的组成体系","level":"1.2.1.2","depth":3,"anchor":"#112ros2的组成体系","path":"chapter1/1.1-初识ROS2.md","ref":"chapter1/1.1-初识ROS2.md#112ros2的组成体系","articles":[]},{"title":"1.1.3 ROS2相比ROS1的优势","level":"1.2.1.3","depth":3,"anchor":"#113-ros2相比ros1的优势","path":"chapter1/1.1-初识ROS2.md","ref":"chapter1/1.1-初识ROS2.md#113-ros2相比ros1的优势","articles":[]}]},{"title":"1.2 动手安装ROS2","level":"1.2.2","depth":2,"path":"chapter1/1.2-安装ROS2.md","ref":"chapter1/1.2-安装ROS2.md","articles":[{"title":"1.2.1 Ubuntu系统安装","level":"1.2.2.1","depth":3,"anchor":"#121ubuntu系统安装","path":"chapter1/1.2-安装ROS2.md","ref":"chapter1/1.2-安装ROS2.md#121ubuntu系统安装","articles":[]},{"title":"1.2.2 一键安装-ROS2","level":"1.2.2.2","depth":3,"anchor":"#122-一键安装-ros2","path":"chapter1/1.2-安装ROS2.md","ref":"chapter1/1.2-安装ROS2.md#122-一键安装-ros2","articles":[]},{"title":"1.2.3 ROS2初体验","level":"1.2.2.3","depth":3,"anchor":"#123ros2初体验","path":"chapter1/1.2-安装ROS2.md","ref":"chapter1/1.2-安装ROS2.md#123ros2初体验","articles":[{"title":"游戏一你说我听","level":"1.2.2.3.1","depth":4,"anchor":"#游戏一你说我听","path":"chapter1/1.2-安装ROS2.md","ref":"chapter1/1.2-安装ROS2.md#游戏一你说我听","articles":[]},{"title":"游戏二涂鸦乌龟","level":"1.2.2.3.2","depth":4,"anchor":"#游戏二涂鸦乌龟","path":"chapter1/1.2-安装ROS2.md","ref":"chapter1/1.2-安装ROS2.md#游戏二涂鸦乌龟","articles":[]}]}]},{"title":"1.3 总结","level":"1.2.3","depth":2,"path":"chapter1/1.3-总结.md","ref":"chapter1/1.3-总结.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","-sharing","-fontsettings","-livereload","-highlight"],"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/1.1-初识ROS2.md","mtime":"2026-04-27T10:29:36.099Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-04-28T05:44:23.718Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+
+    </body>
+</html>
+

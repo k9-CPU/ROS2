@@ -1,0 +1,960 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.4 节点的参数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.4-节点参数.html" />
+    
+    
+    <link rel="prev" href="advanced.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">第一章 ROS2概述与环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/intro.html">
+            
+                <a href="../chapter1/intro.html">
+            
+                    
+                    入门篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/1.1-初识ROS2.html">
+            
+                <a href="../chapter1/1.1-初识ROS2.html">
+            
+                    
+                    1.1 初识ROS2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../chapter1/1.1-初识ROS2.html">
+            
+                <a href="../chapter1/1.1-初识ROS2.html#111-ros的发展历程">
+            
+                    
+                    1.1.1 ROS的发展历程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../chapter1/1.1-初识ROS2.html">
+            
+                <a href="../chapter1/1.1-初识ROS2.html#112ros2的组成体系">
+            
+                    
+                    1.1.2 ROS2的组成体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../chapter1/1.1-初识ROS2.html">
+            
+                <a href="../chapter1/1.1-初识ROS2.html#113-ros2相比ros1的优势">
+            
+                    
+                    1.1.3 ROS2相比ROS1的优势
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/1.2-安装ROS2.html">
+            
+                <a href="../chapter1/1.2-安装ROS2.html">
+            
+                    
+                    1.2 动手安装ROS2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../chapter1/1.2-安装ROS2.html">
+            
+                <a href="../chapter1/1.2-安装ROS2.html#121ubuntu系统安装">
+            
+                    
+                    1.2.1 Ubuntu系统安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../chapter1/1.2-安装ROS2.html">
+            
+                <a href="../chapter1/1.2-安装ROS2.html#122-一键安装-ros2">
+            
+                    
+                    1.2.2 一键安装-ROS2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../chapter1/1.2-安装ROS2.html">
+            
+                <a href="../chapter1/1.2-安装ROS2.html#123ros2初体验">
+            
+                    
+                    1.2.3 ROS2初体验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../chapter1/1.2-安装ROS2.html">
+            
+                <a href="../chapter1/1.2-安装ROS2.html#游戏一你说我听">
+            
+                    
+                    游戏一你说我听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../chapter1/1.2-安装ROS2.html">
+            
+                <a href="../chapter1/1.2-安装ROS2.html#游戏二涂鸦乌龟">
+            
+                    
+                    游戏二涂鸦乌龟
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/1.3-总结.html">
+            
+                <a href="../chapter1/1.3-总结.html">
+            
+                    
+                    1.3 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/advanced.html">
+            
+                <a href="../chapter1/advanced.html">
+            
+                    
+                    进阶篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/1.4-ROS2通信基础.html">
+            
+                <a href="../chapter1/1.4-ROS2通信基础.html">
+            
+                    
+                    1.4 ROS2通信基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../chapter1/1.4-ROS2通信基础.html">
+            
+                <a href="../chapter1/1.4-ROS2通信基础.html#141ros2架构图表">
+            
+                    
+                    1.4.1 ROS2架构图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../chapter1/1.4-ROS2通信基础.html">
+            
+                <a href="../chapter1/1.4-ROS2通信基础.html#142一次通信的完整流程">
+            
+                    
+                    1.4.2 一次通信的完整流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/1.5-DDS中间件.html">
+            
+                <a href="../chapter1/1.5-DDS中间件.html">
+            
+                    
+                    1.5 中间件DDS——ROS2的"传菜系统"
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../chapter1/1.5-DDS中间件.html">
+            
+                <a href="../chapter1/1.5-DDS中间件.html#151什么是dds">
+            
+                    
+                    1.5.1 什么是DDS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../chapter1/1.5-DDS中间件.html">
+            
+                <a href="../chapter1/1.5-DDS中间件.html#152dds的通讯模型">
+            
+                    
+                    1.5.2 DDS的通讯模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../chapter1/1.5-DDS中间件.html">
+            
+                <a href="../chapter1/1.5-DDS中间件.html#153dds的核心概念">
+            
+                    
+                    1.5.3 DDS的核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../chapter1/1.5-DDS中间件.html">
+            
+                <a href="../chapter1/1.5-DDS中间件.html#154qos--精细化服务质量控制">
+            
+                    
+                    1.5.4 QoS--精细化服务质量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../chapter1/1.5-DDS中间件.html">
+            
+                <a href="../chapter1/1.5-DDS中间件.html#155为什么ros2要选dds">
+            
+                    
+                    1.5.5 为什么ROS2要选DDS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/1.6-进阶总结.html">
+            
+                <a href="../chapter1/1.6-进阶总结.html">
+            
+                    
+                    1.6 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二章 ROS2节点（Node）</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    入门篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="2.1-节点是什么.html">
+            
+                <a href="2.1-节点是什么.html">
+            
+                    
+                    2.1 节点是什么？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="2.1-节点是什么.html">
+            
+                <a href="2.1-节点是什么.html#211-节点的定义">
+            
+                    
+                    2.1.1 节点的定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="2.1-节点是什么.html">
+            
+                <a href="2.1-节点是什么.html#212-节点之间如何交互">
+            
+                    
+                    2.1.2 节点之间如何交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="2.1-节点是什么.html">
+            
+                <a href="2.1-节点是什么.html#213-节点的基本行为">
+            
+                    
+                    2.1.3 节点的基本行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="2.2-功能包与工作空间.html">
+            
+                <a href="2.2-功能包与工作空间.html">
+            
+                    
+                    2.2 功能包与工作空间
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="2.2-功能包与工作空间.html">
+            
+                <a href="2.2-功能包与工作空间.html#221-功能包是什么">
+            
+                    
+                    2.2.1 功能包是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="2.2-功能包与工作空间.html">
+            
+                <a href="2.2-功能包与工作空间.html#222-工作空间是什么">
+            
+                    
+                    2.2.2 工作空间是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="2.2-功能包与工作空间.html">
+            
+                <a href="2.2-功能包与工作空间.html#223-常用命令">
+            
+                    
+                    2.2.3 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="2.3-创建第一个节点.html">
+            
+                <a href="2.3-创建第一个节点.html">
+            
+                    
+                    2.3 创建第一个节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="2.3-创建第一个节点.html">
+            
+                <a href="2.3-创建第一个节点.html#231-操作流程">
+            
+                    
+                    2.3.1 操作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="2.3-创建第一个节点.html">
+            
+                <a href="2.3-创建第一个节点.html#232-节点常用cli">
+            
+                    
+                    2.3.2 节点常用CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="advanced.html">
+            
+                <a href="advanced.html">
+            
+                    
+                    进阶篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.2.1" data-path="2.4-节点参数.html">
+            
+                <a href="2.4-节点参数.html">
+            
+                    
+                    2.4 节点的参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="2.4-节点参数.html">
+            
+                <a href="2.4-节点参数.html#241-参数是什么">
+            
+                    
+                    2.4.1 参数是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="2.4-节点参数.html">
+            
+                <a href="2.4-节点参数.html#242-声明和获取参数">
+            
+                    
+                    2.4.2 声明和获取参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.3" data-path="2.4-节点参数.html">
+            
+                <a href="2.4-节点参数.html#243-操作参数的命令">
+            
+                    
+                    2.4.3 操作参数的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="2.5-生命周期节点.html">
+            
+                <a href="2.5-生命周期节点.html">
+            
+                    
+                    2.5 生命周期节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="2.5-生命周期节点.html">
+            
+                <a href="2.5-生命周期节点.html#251-什么是生命周期节点">
+            
+                    
+                    2.5.1 什么是生命周期节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2" data-path="2.5-生命周期节点.html">
+            
+                <a href="2.5-生命周期节点.html#252-什么时候用生命周期节点">
+            
+                    
+                    2.5.2 什么时候用生命周期节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="2.6-多线程与执行器.html">
+            
+                <a href="2.6-多线程与执行器.html">
+            
+                    
+                    2.6 节点的多线程与执行器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="2.6-多线程与执行器.html">
+            
+                <a href="2.6-多线程与执行器.html#261-什么是执行器executor">
+            
+                    
+                    2.6.1 什么是执行器(Executor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.2" data-path="2.6-多线程与执行器.html">
+            
+                <a href="2.6-多线程与执行器.html#262-多线程执行器">
+            
+                    
+                    2.6.2 多线程执行器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="2.7-性能与调试.html">
+            
+                <a href="2.7-性能与调试.html">
+            
+                    
+                    2.7 节点性能与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.4.1" data-path="2.7-性能与调试.html">
+            
+                <a href="2.7-性能与调试.html#271-常用调试命令">
+            
+                    
+                    2.7.1 常用调试命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="2.8-总结.html">
+            
+                <a href="2.8-总结.html">
+            
+                    
+                    2.8 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.4 节点的参数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="24-&#x8282;&#x70B9;&#x7684;&#x53C2;&#x6570;">2.4 &#x8282;&#x70B9;&#x7684;&#x53C2;&#x6570;</h1>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x5B66;&#x4E60;&#x8282;&#x70B9;&#x7684;&#x53C2;&#x6570;</p>
+<h2 id="241-&#x53C2;&#x6570;&#x662F;&#x4EC0;&#x4E48;">2.4.1 &#x53C2;&#x6570;&#x662F;&#x4EC0;&#x4E48;</h2>
+<p><strong>&#x53C2;&#x6570;&#xFF08;Parameter&#xFF09;</strong>&#x662F;<strong>&#x8282;&#x70B9;</strong>&#x5BF9;&#x5916;&#x66B4;&#x9732;&#x7684;<strong>&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x9879;</strong>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x4ECE;&#x800C;&#x6539;&#x53D8;&#x8282;&#x70B9;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x65E0;&#x9700;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x6216;&#x91CD;&#x542F;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x60F3;&#x8C61;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#xFF1A;&#x4F60;&#x5728;&#x8C03;&#x8BD5;&#x4E00;&#x4E2A;PID&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x6BCF;&#x6B21;&#x8C03;&#x6574;&#x53C2;&#x6570;&#x90FD;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6E90;&#x7801;&#x3001;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x3001;&#x91CD;&#x65B0;&#x8FD0;&#x884C;&#x2014;&#x2014;&#x6548;&#x7387;&#x6781;&#x4F4E;&#x3002;&#x5982;&#x679C;&#x5C06;PID&#x7684;&#x4E09;&#x4E2A;&#x589E;&#x76CA;&#x503C;&#x58F0;&#x660E;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x5B9E;&#x65F6;&#x4FEE;&#x6539;&#xFF0C;&#x8282;&#x70B9;&#x4F1A;&#x7ACB;&#x5373;&#x54CD;&#x5E94;&#x65B0;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#xFF1A;<strong>&#x63A7;&#x5236;&#x5FAA;&#x73AF;&#x9891;&#x7387;</strong>&#x3001;<strong>&#x8BBE;&#x7F6E;&#x9608;&#x503C;</strong>&#x3001;<strong>&#x542F;&#x7528;/&#x7981;&#x7528;&#x529F;&#x80FD;&#x5F00;&#x5173;</strong>&#x7B49;&#x3002;</p>
+<p>ROS2&#x53C2;&#x6570;&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ol>
+<li><strong>&#x6574;&#x578B;&#xFF08;integer&#xFF09;</strong></li>
+<li><strong>&#x6D6E;&#x70B9;&#x578B;&#xFF08;double&#xFF09;</strong></li>
+<li><strong>&#x5E03;&#x5C14;&#x578B;&#xFF08;bool&#xFF09;</strong></li>
+<li><strong>&#x5B57;&#x7B26;&#x4E32;&#xFF08;string&#xFF09;</strong></li>
+<li><strong>&#x6570;&#x7EC4;&#xFF08;byte_array, bool_array, integer_array, double_array, string_array&#xFF09;</strong></li>
+</ol>
+<p>&#x53C2;&#x6570;&#x65E2;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x5728;&#x8282;&#x70B9;&#x5185;&#x90E8;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6301;&#x4E45;&#x5316;&#x5230;YAML&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4FBF;&#x4E8E;&#x6279;&#x91CF;&#x914D;&#x7F6E;&#x548C;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x3002;</p>
+<p>&#x901A;&#x4FD7;&#x7684;&#x8BB2;&#xFF0C;&#x53C2;&#x6570;&#x5C31;&#x50CF;&#x624B;&#x673A;&#x91CC;&#x7684;&#x201C;&#x8BBE;&#x7F6E;&#x201D;&#x2014;&#x2014;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x6539;&#x94C3;&#x58F0;&#x5927;&#x5C0F;&#xFF0C;&#x4E0D;&#x7528;&#x91CD;&#x542F;&#x624B;&#x673A;&#x3002;</p>
+<p><img src="2.4-%E8%8A%82%E7%82%B9%E5%8F%82%E6%95%B0.assets/image-20260426154322325.png" alt="image-20260426154322325"></p>
+<h2 id="242-&#x58F0;&#x660E;&#x548C;&#x83B7;&#x53D6;&#x53C2;&#x6570;">2.4.2 &#x58F0;&#x660E;&#x548C;&#x83B7;&#x53D6;&#x53C2;&#x6570;</h2>
+<p>&#x90A3;&#x6211;&#x4EEC;&#x8BE5;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x5462;&#xFF0C;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#xFF1A;</p>
+<p>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;<strong>&#x6574;&#x6570;(int)&#x3001;&#x6D6E;&#x70B9;&#x6570;(float)&#x3001;&#x5E03;&#x5C14;&#x503C;&#xFF08;bool&#xFF09;&#x3001;&#x5B57;&#x7B26;&#x4E32;(string)</strong>&#xFF0C;&#x751A;&#x81F3;<strong>&#x6570;&#x7EC4;</strong>&#xFF0C;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x591F;&#x7528;&#x4E86;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x8DDF;&#x7740;&#x6D41;&#x7A0B;&#x8D70;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x53EF;&#x7075;&#x6D3B;&#x4FEE;&#x6539;&#x7684;&#x53C2;&#x6570;&#x4E86;&#x3002;</p>
+<p>1.&#x521B;&#x5EFA;<strong>&#x53D8;&#x91CF;&#xFF08;param_name&#xFF09;</strong>&#x7ED9;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x5728;&#x79C1;&#x6709;&#x6743;&#x9650;&#x4E0B;&#x521B;&#x5EFA;</p>
+<p>2.&#x58F0;&#x660E;&#x53C2;&#x6570;&#xFF0C;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x8FDB;&#x884C;</p>
+<pre><code class="lang-c++">this-&gt;declare_parameter&lt;&#x53C2;&#x6570;&#x7C7B;&#x578B;&gt;(&quot; param _name&quot;, param_name);
+</code></pre>
+<p>3.&#x8C03;&#x7528;&#x53C2;&#x6570;</p>
+<pre><code class="lang-c++">this-&gt;get_parameter(&quot;param _name &quot;, param _name);
+</code></pre>
+<p>4.&#x7136;&#x540E;&#x8FD0;&#x884C;&#x8282;&#x70B9;&#xFF0C;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x4FEE;&#x6539;&#x8282;&#x70B9;</p>
+<pre><code>ros2 run turtlesim turtlesim_node --ros-args -p &lt; param_name &gt;:=&lt;value&gt;
+</code></pre><p>5.&#x5B9E;&#x4F8B;</p>
+<pre><code>ros2 run turtlesim turtlesim_node --ros-args \
+-p background_r:=255    # &#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;&#x7EA2;&#x8272;&#x901A;&#x9053;&#x4E3A;100\
+-p use_sim_time:=true     # &#x542F;&#x7528;&#x4EFF;&#x771F;&#x65F6;&#x95F4;
+</code></pre><p><img src="2.4-%E8%8A%82%E7%82%B9%E5%8F%82%E6%95%B0.assets/image-20260420211330295-1777189821903-43.png" alt="image-20260420211330295"></p>
+<h2 id="243-&#x64CD;&#x4F5C;&#x53C2;&#x6570;&#x7684;&#x547D;&#x4EE4;">2.4.3 &#x64CD;&#x4F5C;&#x53C2;&#x6570;&#x7684;&#x547D;&#x4EE4;</h2>
+<p>1&#x3001;&#x67E5;&#x770B;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x53C2;&#x6570;</p>
+<pre><code>ros2 param list
+</code></pre><p>2&#x3001;&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x503C;</p>
+<pre><code>ros2 param get &lt;node_name&gt; &lt;param_name&gt;
+</code></pre><p>3&#x3001;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#xFF08;&#x7ACB;&#x5373;&#x751F;&#x6548;&#xFF09;</p>
+<pre><code>ros2 param set &lt;node_name&gt; &lt; param_name &gt; &lt;value&gt;
+</code></pre><p>4&#x3001;&#x628A;&#x53C2;&#x6570;&#x4FDD;&#x5B58;&#x5230;&#x6587;&#x4EF6;</p>
+<pre><code>ros2 param dump &lt;node_name&gt;
+</code></pre><p>5&#x3001;&#x542F;&#x52A8;&#x65F6;&#x52A0;&#x8F7D;&#x53C2;&#x6570;&#x6587;&#x4EF6;</p>
+<pre><code>ros2 run &lt;packages_name&gt; &lt;node_name&gt; --ros-args --params-file param.yaml
+</code></pre><p>&#x53C2;&#x6570;&#x673A;&#x5236;&#x8BA9;&#x8282;&#x70B9;&#x53D8;&#x5F97;&#x7075;&#x6D3B;&#x53EF;&#x914D;&#x7F6E;&#xFF0C;&#x4F46;&#x666E;&#x901A;&#x8282;&#x70B9;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x8FC7;&#x4E8E;&#x7B80;&#x5355;&#x2014;&#x2014;&#x542F;&#x52A8;&#x5373;&#x8FD0;&#x884C;&#xFF0C;&#x5173;&#x95ED;&#x5373;&#x9500;&#x6BC1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x60F3;&#x7CBE;&#x786E;&#x63A7;&#x5236;&#x8282;&#x70B9;&#x201C;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x51C6;&#x5907;&#x3001;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x5E72;&#x6D3B;&#x3001;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F11;&#x606F;&#x201D;&#x5462;&#xFF1F;</p>
+<p>&#x8FD9;&#x5C31;&#x9700;&#x8981;<strong>&#x751F;&#x547D;&#x5468;&#x671F;&#x8282;&#x70B9;</strong>&#x4E86;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="advanced.html" class="navigation navigation-prev " aria-label="Previous page: 进阶篇">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.4-节点参数.html#241-参数是什么" class="navigation navigation-next " aria-label="Next page: 2.4.1 参数是什么">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.4 节点的参数","level":"2.2.1","depth":2,"next":{"title":"2.4.1 参数是什么","level":"2.2.1.1","depth":3,"anchor":"#241-参数是什么","path":"chapter2/2.4-节点参数.md","ref":"chapter2/2.4-节点参数.md#241-参数是什么","articles":[]},"previous":{"title":"进阶篇","level":"2.2","depth":1,"path":"chapter2/advanced.md","ref":"chapter2/advanced.md","articles":[{"title":"2.4 节点的参数","level":"2.2.1","depth":2,"path":"chapter2/2.4-节点参数.md","ref":"chapter2/2.4-节点参数.md","articles":[{"title":"2.4.1 参数是什么","level":"2.2.1.1","depth":3,"anchor":"#241-参数是什么","path":"chapter2/2.4-节点参数.md","ref":"chapter2/2.4-节点参数.md#241-参数是什么","articles":[]},{"title":"2.4.2 声明和获取参数","level":"2.2.1.2","depth":3,"anchor":"#242-声明和获取参数","path":"chapter2/2.4-节点参数.md","ref":"chapter2/2.4-节点参数.md#242-声明和获取参数","articles":[]},{"title":"2.4.3 操作参数的命令","level":"2.2.1.3","depth":3,"anchor":"#243-操作参数的命令","path":"chapter2/2.4-节点参数.md","ref":"chapter2/2.4-节点参数.md#243-操作参数的命令","articles":[]}]},{"title":"2.5 生命周期节点","level":"2.2.2","depth":2,"path":"chapter2/2.5-生命周期节点.md","ref":"chapter2/2.5-生命周期节点.md","articles":[{"title":"2.5.1 什么是生命周期节点","level":"2.2.2.1","depth":3,"anchor":"#251-什么是生命周期节点","path":"chapter2/2.5-生命周期节点.md","ref":"chapter2/2.5-生命周期节点.md#251-什么是生命周期节点","articles":[]},{"title":"2.5.2 什么时候用生命周期节点","level":"2.2.2.2","depth":3,"anchor":"#252-什么时候用生命周期节点","path":"chapter2/2.5-生命周期节点.md","ref":"chapter2/2.5-生命周期节点.md#252-什么时候用生命周期节点","articles":[]}]},{"title":"2.6 节点的多线程与执行器","level":"2.2.3","depth":2,"path":"chapter2/2.6-多线程与执行器.md","ref":"chapter2/2.6-多线程与执行器.md","articles":[{"title":"2.6.1 什么是执行器(Executor)","level":"2.2.3.1","depth":3,"anchor":"#261-什么是执行器executor","path":"chapter2/2.6-多线程与执行器.md","ref":"chapter2/2.6-多线程与执行器.md#261-什么是执行器executor","articles":[]},{"title":"2.6.2 多线程执行器","level":"2.2.3.2","depth":3,"anchor":"#262-多线程执行器","path":"chapter2/2.6-多线程与执行器.md","ref":"chapter2/2.6-多线程与执行器.md#262-多线程执行器","articles":[]}]},{"title":"2.7 节点性能与调试","level":"2.2.4","depth":2,"path":"chapter2/2.7-性能与调试.md","ref":"chapter2/2.7-性能与调试.md","articles":[{"title":"2.7.1 常用调试命令","level":"2.2.4.1","depth":3,"anchor":"#271-常用调试命令","path":"chapter2/2.7-性能与调试.md","ref":"chapter2/2.7-性能与调试.md#271-常用调试命令","articles":[]}]},{"title":"2.8 总结","level":"2.2.5","depth":2,"path":"chapter2/2.8-总结.md","ref":"chapter2/2.8-总结.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","-sharing","-fontsettings","-livereload","-highlight"],"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2.4-节点参数.md","mtime":"2026-04-27T10:12:41.338Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-04-28T05:44:23.718Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+
+    </body>
+</html>
+
